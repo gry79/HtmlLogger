@@ -1,0 +1,29 @@
+#######################################
+# Syntax Coloring Map For Keyboard
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Logger	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+info	KEYWORD2
+debug	KEYWORD2
+error	KEYWORD2
+addBuffer	KEYWORD2
+getLastLogMsg	KEYWORD2
+getAllMsgsAsString	KEYWORD2
+getAllMsgsAsTextarea	KEYWORD2
+clearLog	KEYWORD2
+update	KEYWORD2
+getTimeNow	KEYWORD2
+getMsgCounter	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
