@@ -1,5 +1,4 @@
 #include "Logger.h"
-#include "globals.h"
 
 Logger::Logger() {
     _CE = new Timezone(_CEST, _CET);
