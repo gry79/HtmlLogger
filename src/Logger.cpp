@@ -23,7 +23,55 @@ void Logger::info(String msg) {
     log(msg, " INFO  ");
 }
 
+void Logger::info(int msg) {
+    log(msg, " INFO  ");
+}
+
+void Logger::info(long msg) {
+    log(msg, " INFO  ");
+}
+
+void Logger::info(unsigned int msg) {
+    log(msg, " INFO  ");
+}
+
+void Logger::info(unsigned long msg) {
+    log(msg, " INFO  ");
+}
+
+void Logger::info(double msg) {
+    log(msg, " INFO  ");
+}
+
+void Logger::info(float msg) {
+    log(msg, " INFO  ");
+}
+
 void Logger::debug(String msg) {
+    log(msg, " DEBUG ");
+}
+
+void Logger::debug(int msg) {
+    log(msg, " DEBUG ");
+}
+
+void Logger::debug(long msg) {
+    log(msg, " DEBUG ");
+}
+
+void Logger::debug(unsigned int msg) {
+    log(msg, " DEBUG ");
+}
+
+void Logger::debug(unsigned long msg) {
+    log(msg, " DEBUG ");
+}
+
+void Logger::debug(double msg) {
+    log(msg, " DEBUG ");
+}
+
+void Logger::debug(float msg) {
     log(msg, " DEBUG ");
 }
 
@@ -31,8 +79,56 @@ void Logger::error(String msg) {
     log(msg, " ERROR ");
 }
 
+void Logger::error(int msg) {
+    log(msg, " ERROR ");
+}
+
+void Logger::error(long msg) {
+    log(msg, " ERROR ");
+}
+
+void Logger::error(unsigned int msg) {
+    log(msg, " ERROR ");
+}
+
+void Logger::error(unsigned long msg) {
+    log(msg, " ERROR ");
+}
+
+void Logger::error(double msg) {
+    log(msg, " ERROR ");
+}
+
+void Logger::error(float msg) {
+    log(msg, " ERROR ");
+}
+
 void Logger::addBuffer(String msg) {
     _buffer += msg;
+}
+
+void Logger::addBuffer(int msg) {
+    _buffer += String(msg);
+}
+
+void Logger::addBuffer(long msg) {
+    _buffer += String(msg);
+}
+
+void Logger::addBuffer(unsigned int msg) {
+    _buffer += String(msg);
+}
+
+void Logger::addBuffer(unsigned long msg) {
+    _buffer += String(msg);
+}
+
+void Logger::addBuffer(double msg) {
+    _buffer += String(msg);
+}
+
+void Logger::addBuffer(float msg) {
+    _buffer += String(msg);
 }
 
 void Logger::log(String msg, String type) {
@@ -54,6 +150,30 @@ void Logger::log(String msg, String type) {
     _buffer = "";
 
     _logMsgCounter++;
+}
+
+void Logger::log(int msg, String type) {
+    log(String(msg), type);
+}
+
+void Logger::log(long msg, String type) {
+    log(String(msg), type);
+}
+
+void Logger::log(unsigned int msg, String type) {
+    log(String(msg), type);
+}
+
+void Logger::log(unsigned long msg, String type) {
+    log(String(msg), type);
+}
+
+void Logger::log(double msg, String type) {
+    log(String(msg), type);
+}
+
+void Logger::log(float msg, String type) {
+    log(String(msg), type);
 }
 
 String Logger::getLastLogMsg() {

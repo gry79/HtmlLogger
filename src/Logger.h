@@ -19,9 +19,33 @@ class Logger {
     public:
         Logger();
         void info(String msg);
+        void info(int msg);
+        void info(long msg);
+        void info(unsigned int msg);
+        void info(unsigned long msg);
+        void info(double msg);
+        void info(float msg);
         void debug(String msg);
+        void debug(int msg);
+        void debug(long msg);
+        void debug(unsigned int msg);
+        void debug(unsigned long msg);
+        void debug(double msg);
+        void debug(float msg);
         void error(String msg);
+        void error(int msg);
+        void error(long msg);
+        void error(unsigned int msg);
+        void error(unsigned long msg);
+        void error(double msg);
+        void error(float msg);
         void addBuffer(String msg);
+        void addBuffer(int msg);
+        void addBuffer(long msg);
+        void addBuffer(unsigned int msg);
+        void addBuffer(unsigned long msg);
+        void addBuffer(double msg);
+        void addBuffer(float msg);
         String getLastLogMsg();
         String getAllMsgsAsString();
         String getAllMsgsAsTextarea();
@@ -46,6 +70,12 @@ class Logger {
         unsigned long _logMsgCounter;
 
         void log(String msg, String type);
+        void log(int msg, String type);
+        void log(long msg, String type);
+        void log(unsigned int msg, String type);
+        void log(unsigned long msg, String type);
+        void log(double msg, String type);
+        void log(float msg, String type);
         String string00(int);
 };
 
